@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -93,6 +94,7 @@ body{
     border-radius:30px;
     cursor:pointer;
     margin-top:15px;
+    transition:0.3s;
 }
 
 .loveBtn:hover{
@@ -104,6 +106,7 @@ body{
     margin-top:20px;
     color:#ff4d6d;
     font-weight:bold;
+    line-height:1.8;
 }
 
 .heart{
@@ -124,6 +127,7 @@ body{
 }
 </style>
 </head>
+
 <body>
 
 <!-- First Page -->
@@ -155,10 +159,15 @@ body{
 
         <div id="message">
             You are the first thought on my mind every morning and
-            the sweetest reason behind my smile. I know sometimes I make your 
-            blood boil make you angry, sad and all the feelings I am really sorry
-            to make you go thorough these annoying things but belive me
-            I REAALLYYY LOVEEE YOUU WITHH ALL MY HEART. I LOVE YOU SARA!!❤️❤️❤️✨
+            the sweetest reason behind my smile.<br><br>
+
+            I know sometimes I make your blood boil, make you angry,
+            sad, and feel all kinds of emotions. I'm truly sorry for
+            putting you through those annoying moments.<br><br>
+
+            But believe me, I REALLY LOVE YOU WITH ALL MY HEART. ❤️<br><br>
+
+            I LOVE YOU SARA!! ❤️❤️❤️✨
         </div>
     </div>
 </div>
@@ -211,16 +220,16 @@ function showLove(){
         heart.innerHTML = "❤️";
         heart.className = "heart";
 
-        heart.style.left = Math.random()*100 + "vw";
-        heart.style.fontSize = (20 + Math.random()*25) + "px";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.fontSize = (20 + Math.random() * 25) + "px";
         heart.style.animationDuration =
-        (4 + Math.random()*4) + "s";
+        (4 + Math.random() * 4) + "s";
 
         document.body.appendChild(heart);
 
-        setTimeout(()=>{
+        setTimeout(() => {
             heart.remove();
-        },8000);
+        }, 8000);
     }
 }
 </script>
